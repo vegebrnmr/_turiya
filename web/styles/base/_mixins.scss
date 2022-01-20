@@ -1,0 +1,6 @@
+@mixin section-background($url) {
+  background: url("../assets/#{$url}");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}

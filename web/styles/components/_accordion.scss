@@ -1,0 +1,110 @@
+.contentBox {
+  padding-top: 2rem;
+
+  &__main {
+    background-color: transparent;
+    color: $color-menu;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    border: none;
+    font-weight: lighter;
+    text-align: left;
+    outline: none;
+    font-size: 2rem;
+    transition: 0.4s;
+  }
+
+  &__main:after {
+    content: "\002B";
+    color: transparent;
+    float: right;
+    margin-left: 0.5rem;
+  }
+
+  &__text {
+    width: 60%;
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5em;
+  }
+  &__text_para {
+    padding: 0.5em 0 0.5em;
+    color: $color-white;
+    text-indent: -1.1em;
+    font-size: 1.2rem;
+  }
+}
+
+.active,
+.contentBox__main:hover {
+  background-color: $color-menu;
+  color: $color-black;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+@media screen and (max-width: 1630px) {
+  .contentBox {
+    &__main {
+      color: $color-white;
+      width: 100%;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .contentBox {
+    &__main {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contentBox {
+    &__main {
+      text-align: center;
+      color: $color-black;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+
+    &__text {
+      width: 100%;
+      text-align: center;
+    }
+    &__text_para {
+      font-size: 1rem;
+      color: $color-black;
+    }
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .contentBox {
+    &__main {
+      text-align: center;
+      color: $color-black;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+
+    &__text {
+      width: 100%;
+      text-align: center;
+    }
+    &__text_para {
+      font-size: 1rem;
+      color: $color-black;
+    }
+  }
+}

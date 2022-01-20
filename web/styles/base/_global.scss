@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: $color-white;
+  color: $color-black;
+  animation: fadein 1s;
+  @keyframes fadein {
+    from {
+      opacity: 0.9;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  font-family: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+}
+
+span {
+  color: $color-black;
+}
+
+.container {
+  width: 80%;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

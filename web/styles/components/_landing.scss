@@ -1,0 +1,32 @@
+.landing {
+  min-height: 100vh;
+  background-image: url(/web/assets/landing.jpg);
+  background-position: 65% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__logo {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 18.3%;
+    width: 60%;
+    transition: 0.5s;
+  }
+
+  &__logo:hover {
+    transition: 2.5s;
+    filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(186deg)
+      brightness(100%) contrast(100%);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .landing {
+    background-image: none;
+    &__logo {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
