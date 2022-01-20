@@ -116,7 +116,6 @@ ul li ul li {
   .list {
     position: absolute;
     right: 0px;
-    min-height: 100vh;
     top: 90%;
     background-color: $color-menu;
     z-index: 1000;
@@ -160,6 +159,7 @@ ul li ul li {
     transform: translateX(0%);
     overflow-x: hidden;
     z-index: 9999;
+    height: 100vh;
   }
 
   @keyframes listFade {
